@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191b25;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input {
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid lightgrey;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+button {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(24, 97, 231);
+    color: white;
+    line-height: 35px;
+    border-radius: 15px;
+}

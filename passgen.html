@@ -4,37 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Passgen</title>
-        <style>
-            input {
-                display: block;
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Password System Generator</h1>
-        <form action="javascript:void(0);">
-            <input type="text" name="color" id="color" autocomplete="off" />
-            <label for="color">Color</label>
-            <input type="text" name="numofcolors" id="numofcolors" autocomplete="off" />
-            <label for="numofcolors">Num of Colors</label>
-            <input type="text" name="literalnumofcolors" id="literalnumofcolors" autocomplete="off" />
-            <label for="literalnumofcolors">Literal Num of Colors</label>
-            <input type="submit" value="Generate" id="genBtn" />
-        </form>
+        <div class="container">
+            <h1>Color</h1>
+            <input type="text" name="color" id="color" />
+            <h1>Entity</h1>
+            <input type="text" name="entity" id="entity" />
+            <h1>Pass</h1>
+            <input type="text" name="pass" id="pass" disabled />
+            <button>Generate pass</button>
+        </div>
 
-        <script type="module">
-            const genBtn = document.getElementById("genBtn");
-            const inputColor = document.getElementById("color");
-            const inputNumOfColor = document.getElementById("numofcolors");
-
-            genBtn.addEventListener("click", () => {
-                console.log(inputColor.value);
-            });
-
-            inputColor.addEventListener("keypress", () => {
-                // inputNumOfColor.value = inputColor.value.length > 0 ? inputColor.value.length + 1 : 0;
-                inputColor.value = numToWord.numToWords(123);
-            });
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>
