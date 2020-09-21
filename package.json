@@ -1,0 +1,14 @@
+{
+    "name": "passgen",
+    "version": "1.0.0",
+    "description": "Personalized password system generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Brian Pagal",
+    "license": "MIT",
+    "dependencies": {
+        "number-to-words": "^1.2.4"
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Passgen</title>
+        <style>
+            input {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Password System Generator</h1>
+        <form action="javascript:void(0);">
+            <input type="text" name="color" id="color" autocomplete="off" />
+            <label for="color">Color</label>
+            <input type="text" name="numofcolors" id="numofcolors" autocomplete="off" />
+            <label for="numofcolors">Num of Colors</label>
+            <input type="text" name="literalnumofcolors" id="literalnumofcolors" autocomplete="off" />
+            <label for="literalnumofcolors">Literal Num of Colors</label>
+            <input type="submit" value="Generate" id="genBtn" />
+        </form>
+
+        <script type="module">
+            const genBtn = document.getElementById("genBtn");
+            const inputColor = document.getElementById("color");
+            const inputNumOfColor = document.getElementById("numofcolors");
+
+            genBtn.addEventListener("click", () => {
+                console.log(inputColor.value);
+            });
+
+            inputColor.addEventListener("keypress", () => {
+                // inputNumOfColor.value = inputColor.value.length > 0 ? inputColor.value.length + 1 : 0;
+                inputColor.value = numToWord.numToWords(123);
+            });
+        </script>
+    </body>
+</html>
