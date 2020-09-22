@@ -18,4 +18,7 @@ document.querySelector("button").addEventListener("click", () => {
     }
     const generatedPass = `${color.value}${numCharColor}${wordNumChar}${numCharEntity}${combiSymbols}`;
     pass.value = generatedPass;
+    pass.select();
+    pass.setSelectionRange(0, 99999);
+    document.execCommand("copy");
 });
